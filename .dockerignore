@@ -1,0 +1,23 @@
+# docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Python
+__pycache__
+/.coverage
+/**/*.pyc
+.pytest_cache/
+
+# Editors
+.idea
+.vscode
+
+# Data
+*.csv
+*.parquet
+
+# other
+.git*
+.env
+README*
