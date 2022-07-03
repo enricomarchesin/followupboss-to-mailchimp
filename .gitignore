@@ -21,3 +21,4 @@ pyfiles/
 
 # Secrets
 .secrets*
+.env
