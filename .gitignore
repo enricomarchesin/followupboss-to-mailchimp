@@ -1,0 +1,23 @@
+# MacOS
+.DS_Store
+
+# Python
+__pycache__
+/.coverage
+/.coverage.*
+/**/*.pyc
+.pytest_cache/
+/.testmondata
+pyfiles/
+.ipynb_checkpoints/
+
+# Data
+*.csv
+*.parquet
+
+# Editors
+.idea
+.vscode
+
+# Secrets
+.secrets*

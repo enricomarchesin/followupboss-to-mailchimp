@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+
+  sync:
+    build: .
+    environment:
+    - FOLLOWUPBOSS_API_KEY
+    - MAILCHIMP_API_KEY
