@@ -11,8 +11,8 @@ RUN apt-get update -y \
 ENV LANG en_US.UTF-8
 RUN update-locale && locale-gen $LANG
 
-ARG PIP_VERSION=22.1.2
-ARG POETRY_VERSION=1.1.13
+ARG PIP_VERSION=22.3.1
+ARG POETRY_VERSION=1.3.2
 RUN pip install --no-cache-dir pip==${PIP_VERSION} poetry==${POETRY_VERSION}
 
 WORKDIR /app
