@@ -79,7 +79,7 @@ def get_mailchimp_members_and_audience_id(list: str = None) -> Tuple[list[dict],
     mc_members = []
 
     mc_headers = {"Authorization": f"Bearer {SETTINGS.mailchimp_api_key}"}
-    with httpx.Client(base_url=SETTINGS.mailchimp_api_url, headers=mc_headers) as mc_client:
+    with httpx.Client(base_url=SETTINGS.mailchimp_api_url, headers=mc_headers, timeout=30.0) as mc_client:
         r = mc_client.get(
             "/lists",
             params={
